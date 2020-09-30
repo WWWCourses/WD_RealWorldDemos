@@ -1,0 +1,55 @@
+body{
+	font-size: 1.5em;
+}
+header{
+	position: fixed;
+	top:0; left:0; right: 0;
+	height: 3em;
+	text-align: center;
+	padding: 1em;
+	box-sizing: border-box;
+	background-color: #999;
+	color: #FFF;
+	transition: .8s;
+}
+.header-scrolled{
+	height: 2em;
+	padding: .5em;
+	opacity: .7em;
+}
+.header-scrolled .logo{
+	display: none;
+}
+main{
+	margin-top: 3em;
+	min-height: calc(100vh - 3em - 5em);
+}
+footer{
+	height: 5em;
+	text-align: center;
+	padding: 2em;
+	box-sizing: border-box;
+	background-color: #666;
+	color: #FFF;
+}
+.logo{
+	float: left;
+}
+nav{
+	float: right;
+	background-color: #F99;
+}
+nav>ul>li{
+	float: left;
+	margin: 0 .3em;
+}
+main section{
+	margin: 1em;
+	padding: .5em;
+	border: 1px dotted #999;
+}
+.clear::after{
+	content:"";
+	display: block;
+	clear: both;
+}
